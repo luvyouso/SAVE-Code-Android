@@ -1,0 +1,23 @@
+apply from: 'dependencies.gradle'
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.0.0'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+ext {
+    androidCompileSdkVersion = 23
+    androidBuildToolsVersion = '24.0.0'
+    androidMinSdkVersion = 16
+    androidTargetSdkVersion = 23
+}
