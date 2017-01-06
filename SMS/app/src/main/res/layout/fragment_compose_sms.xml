@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:padding="10dp">
+
+
+        <tiennguyen.sms.view.FlowLayout
+            android:id="@+id/layout_list_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5"
+            android:orientation="horizontal">
+
+        </tiennguyen.sms.view.FlowLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5"
+            android:orientation="horizontal">
+
+            <AutoCompleteTextView
+                android:id="@+id/tv_sendto"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittex_height_size"
+                android:layout_weight="1"
+                android:textColor="@color/purple"
+                android:background="@drawable/round_border_whitebg"
+                android:hint="To:"
+                android:padding="@dimen/padding_10"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:textColorHint="@color/purple" />
+
+            <ImageButton
+                android:id="@+id/btn_add"
+                android:layout_width="@dimen/common_icon_size"
+                android:layout_height="@dimen/common_icon_size"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:background="@mipmap/createsms" />
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/et_message"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/message_height_size"
+            android:layout_marginTop="@dimen/margin_5"
+            android:background="@drawable/round_border_whitebg"
+            android:gravity="left|start"
+            android:hint="Input Text:"
+            android:imeOptions="actionNext"
+            android:padding="@dimen/padding_5"
+            android:textColorHint="@color/purple"
+            android:textColor="@color/purple"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnDatePicker"
+                    android:layout_width="@dimen/common_icon_size"
+                    android:layout_height="@dimen/common_icon_size"
+                    android:background="@mipmap/date" />
+
+
+                <EditText
+                    android:id="@+id/et_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edittex_height_size"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:textColor="@color/purple"
+                    android:background="@drawable/round_border_whitebg"
+                    android:gravity="center|start"
+                    android:padding="@dimen/margin_5" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnTimePicker"
+                    android:layout_width="@dimen/common_icon_size"
+                    android:layout_height="@dimen/common_icon_size"
+                    android:background="@mipmap/clock" />
+
+
+                <EditText
+                    android:id="@+id/et_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edittex_height_size"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:textColor="@color/purple"
+                    android:background="@drawable/round_border_whitebg"
+                    android:gravity="center|start"
+                    android:padding="@dimen/margin_5" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
