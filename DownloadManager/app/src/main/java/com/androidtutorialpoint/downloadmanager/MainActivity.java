@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             //Download Music
             case R.id.DownloadMusic:
-                Uri music_uri = Uri.parse("http://dh7310.ex-cloud.biz/trunk/web/bundles/briszizi/movie/912-513-1463988641.mp4");
+                Uri music_uri = Uri.parse("http://????");
                 Music_DownloadId = DownloadData(music_uri, v);
                 break;
 
