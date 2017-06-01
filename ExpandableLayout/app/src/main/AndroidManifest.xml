@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jp.daiwahouse.droomapp.test">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <!-- ダイアログを表示するために必要 -->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name=".DroomApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".view.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="jp.co.geniee.sdk.messaging.LaunchActionReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="jp.co.geniee.sdk.messaging.action.launch_from_push" />
+                <action android:name="jp.co.geniee.sdk.messaging.action.launch_from_local_push" />
+                <action android:name="jp.co.geniee.sdk.messaging.action.launch_cancel" />
+            </intent-filter>
+        </receiver>
+
+        <!-- ローカルプッシュ通知を利用するために必要 -->
+        <receiver android:name="jp.co.geniee.sdk.messaging.LocalNotificationReceiver">
+            <intent-filter>
+                <action android:name="jp.co.geniee.sdk.push.action.local_send" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="jp.co.geniee.sdk.messaging.MaNotificationListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="jp.co.geniee.sdk.messaging.FcmNotificationTokenService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".view.CertificateActivity"></activity>
+    </application>
+
+</manifest>

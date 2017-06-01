@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">MyDroom</string>
+
+    <!--APP-LIN-01_ログイン-->
+    <string name="app_lin_01_common_header">共通ヘッダー</string>                  <!--0-->
+    <string name="app_lin_01_title">my D-room会員ログイン</string>                  <!--2-->
+
+    <string name="app_lin_01_account_title">会員IDでログイン</string>                               <!--3-->
+    <string name="app_lin_01_account_id">会員ID &lt;半角英数字&gt;</string>                     <!--4-->
+    <string name="app_lin_01_account_id_hint">会員ID</string>                                <!--4.1-->
+    <string name="app_lin_01_account_password">パスワード &lt;半角英数字&gt;</string>      <!--5-->
+    <string name="app_lin_01_account_password_hint">パスワード</string>             <!--5.1-->
+    <string name="app_lin_01_account_save">次回からIDの入力を省略</string>              <!--6-->
+    <string name="app_lin_01_account_forgot_password">会員ID・パスワードをお忘れの方</string><!--7-->
+    <string name="app_lin_01_account_login">ログイン</string>                                   <!--8-->
+
+    <string name="app_lin_01_certificate_title">証明書でログイン</string>                              <!--9-->
+    <string name="app_lin_01_certificate_message">証明書をアップロードすることでログインが可能です。</string>                      <!--9.1-->
+    <string name="app_lin_01_certificate_login">証明書でログイン</string>                      <!--10-->
+
+    <string name="app_lin_01_register_title">まだmyDroom会員に登録されていない方</string>                      <!--11-->
+    <string name="app_lin_01_register_login">新規登録（無料）で登録して \n会員サービスを利用する</string>       <!--12-->
+
+    <string name="app_lin_01_authentication_title">指紋認証でログイン</string>       <!--13-->
+    <string name="app_lin_01_authentication_login">指紋認証でログイン</string>       <!--14-->
+
+    <string name="app_lin_01_home">home</string>               <!--1-->
+    <string name="app_lin_01_home_title">ログインできないときのヒント</string>  <!--1-->
+    <string name="app_lin_01_home_question">◾︎会員ID・パスワードの入力は正しいですか？ \n◾︎my D-room会員登録されていますか？</string>  <!--1-->
+
+    <!--APP-LIN-02_証明書ログイン-->
+    <string name="app_lin_02_common_title"></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

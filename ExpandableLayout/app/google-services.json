@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "433643667155",
+    "firebase_url": "https://mydroom-637ea.firebaseio.com",
+    "project_id": "mydroom-637ea",
+    "storage_bucket": "mydroom-637ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433643667155:android:9802679912698a15",
+        "android_client_info": {
+          "package_name": "jp.daiwahouse.droomapp.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "433643667155-3e7rb8vqr7eplkce1nur5qvujt591tb9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGUdFTQuscp5DqRQtALW03coZkXAMrnwg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

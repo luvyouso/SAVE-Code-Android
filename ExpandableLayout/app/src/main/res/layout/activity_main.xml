@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_height"
+                android:background="@color/bg_gray"
+                android:gravity="center"
+                android:text="@string/app_lin_01_common_header" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_height"
+                android:gravity="center"
+                android:text="@string/app_lin_01_title" />
+
+            <Button
+                android:id="@+id/accountTitle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_height"
+                android:layout_marginTop="@dimen/common_margin_top"
+                android:background="@color/label_color"
+                android:text="@string/app_lin_01_account_title" />
+
+            <jp.daiwahouse.droomapp.test.custom.ExpandableLinearLayout
+                android:id="@+id/expandableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:ael_duration="400"
+                app:ael_expanded="false">
+
+                <LinearLayout
+                    android:id="@+id/value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/common_margin_left"
+                    android:layout_marginRight="@dimen/common_margin_right"
+                    android:animateLayoutChanges="true"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_lin_01_account_id" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/common_height"
+                        android:background="@drawable/border_color_gray"
+                        android:hint="@string/app_lin_01_account_id_hint"
+                        android:maxLines="1"
+                        android:paddingLeft="5dp"
+                        android:singleLine="true" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_lin_01_account_password" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/common_height"
+                        android:background="@drawable/border_color_gray"
+                        android:hint="@string/app_lin_01_account_password_hint"
+                        android:maxLines="1"
+                        android:paddingLeft="5dp"
+                        android:singleLine="true" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/app_lin_01_account_save" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/app_lin_01_account_forgot_password"
+                        android:textColor="@color/blue_link" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/common_login_height"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:background="@color/red"
+                        android:text="@string/app_lin_01_account_login"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+            </jp.daiwahouse.droomapp.test.custom.ExpandableLinearLayout>
+
+            <Button
+                android:id="@+id/certificateTitle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_height"
+                android:layout_marginTop="@dimen/common_margin_top"
+                android:background="@color/label_color"
+                android:text="@string/app_lin_01_certificate_title" />
+
+            <jp.daiwahouse.droomapp.test.custom.ExpandableLinearLayout
+                android:id="@+id/expandablePanelCertificate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:ael_duration="400"
+                app:ael_expanded="false">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/valueCertificate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_margin_left"
+                        android:layout_marginRight="@dimen/common_margin_right"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/app_lin_01_certificate_message" />
+
+                        <Button
+                            android:id="@+id/certificateLogin"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/common_login_height"
+                            android:layout_marginLeft="@dimen/common_margin_left"
+                            android:layout_marginRight="@dimen/common_margin_right"
+                            android:background="@color/red"
+                            android:text="@string/app_lin_01_certificate_login"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </jp.daiwahouse.droomapp.test.custom.ExpandableLinearLayout>
+
+            <Button
+                android:id="@+id/registerTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_margin_top"
+                android:background="@color/label_color"
+                android:text="@string/app_lin_01_register_title" />
+
+            <jp.daiwahouse.droomapp.test.custom.ExpandableLinearLayout
+                android:id="@+id/expandablePanelRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:ael_duration="400"
+                app:ael_expanded="false">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/valueRegister"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_margin_left"
+                        android:layout_marginRight="@dimen/common_margin_right"
+                        android:orientation="vertical">
+
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/common_login_height"
+                            android:layout_marginLeft="@dimen/common_margin_left"
+                            android:layout_marginRight="@dimen/common_margin_right"
+                            android:background="@color/brown"
+                            android:text="@string/app_lin_01_register_login"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </jp.daiwahouse.droomapp.test.custom.ExpandableLinearLayout>
+
+            <Button
+                android:id="@+id/authenticationTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_margin_top"
+                android:background="@color/label_color"
+                android:text="@string/app_lin_01_authentication_title" />
+
+            <jp.daiwahouse.droomapp.test.custom.ExpandableLinearLayout
+                android:id="@+id/expandablePanelAuthentication"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:ael_duration="400"
+                app:ael_expanded="false">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/valueAuthentication"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_margin_left"
+                        android:layout_marginRight="@dimen/common_margin_right"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/common_login_height"
+                            android:layout_marginLeft="@dimen/common_margin_left"
+                            android:layout_marginRight="@dimen/common_margin_right"
+                            android:background="@color/brown"
+                            android:text="@string/app_lin_01_authentication_login"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </jp.daiwahouse.droomapp.test.custom.ExpandableLinearLayout>
+
+
+            <Button
+                android:id="@+id/homeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_margin_top"
+                android:background="@color/label_color"
+                android:text="@string/app_lin_01_home_title" />
+
+            <jp.daiwahouse.droomapp.test.custom.ExpandableLinearLayout
+                android:id="@+id/expandablePanelHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:ael_duration="400"
+                app:ael_expanded="false">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/valueHome"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_margin_left"
+                        android:layout_marginRight="@dimen/common_margin_right"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/app_lin_01_home_question" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </jp.daiwahouse.droomapp.test.custom.ExpandableLinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_height"
+                android:layout_marginTop="@dimen/common_margin_top"
+                android:background="@color/bg_gray"
+                android:gravity="center"
+                android:text="@string/app_lin_01_common_header" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</layout>
