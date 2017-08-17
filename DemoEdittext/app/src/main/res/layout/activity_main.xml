@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <tu.edittext.com.EnterCode
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:inputType="text"
+            android:maxLength="5"
+            android:textIsSelectable="false"
+            android:textSize="20sp"
+            android:visibility="visible"
+            app:pinLineColors="@color/pin_colors" />
+
+        <tu.edittext.com.EnterCode
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="32dp"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:digits="1234567890"
+            android:inputType="number"
+            android:maxLength="4"
+            android:textIsSelectable="false"
+            android:textSize="20sp"
+            android:visibility="visible"
+            app:pinAnimationType="fromBottom"
+            app:pinBackgroundDrawable="@drawable/pin_background" />
+
+    </LinearLayout>
+</layout>
